@@ -1,0 +1,31 @@
+<!-- <div> -->
+    <!-- take this code for the bootstrap version you have (in this case bootstrap 5) -->
+    <!-- <ul class="nav nav-tabs">
+        <li class="nav-item" >
+            <a class="nav-link" [ngClass]="{active: chosenList==='all'}" aria-current="page" (click)="onChoose('all')" style="cursor:pointer">All</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{active: chosenList==='light'}" (click)="onChoose('light')" style="cursor:pointer">Light</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{active: chosenList==='dark'}" (click)="onChoose('dark')" style="cursor:pointer">Dark</a>
+        </li>
+    </ul>
+    <app-list [listChars]="getCharacters()"></app-list>
+</div>  -->
+
+<div>
+    <!-- take this code for the bootstrap version you have (in this case bootstrap 5) -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item" >
+            <a class="nav-link" routerLink="/characters/all" routerLinkActive="active">All</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/characters/light" routerLinkActive="active">Light</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/characters/dark" routerLinkActive="active">Dark</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div> 
